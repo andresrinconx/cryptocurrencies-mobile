@@ -12,16 +12,16 @@ const Cotizacion = ({resultado}) => {
         <Text style={[styles.texto, styles.precio]}>
             <Text style={styles.span}>{PRICE}</Text>
         </Text>
-        <Text style={styles.texto}>Precio mas alto del dia: {' '}
+        <Text style={styles.texto}>Highest price of the day: {' '}
             <Text style={styles.span}>{HIGHDAY}</Text>
         </Text>
-        <Text style={styles.texto}>Precio mas bajo del dia: {' '}
+        <Text style={styles.texto}>Lowest price of the day: {' '}
             <Text style={styles.span}>{LOWDAY}</Text>
         </Text>
-        <Text style={styles.texto}>Variacion ultimas 24 horas: {' '}
+        <Text style={styles.texto}>Variation last 24 hours: {' '}
             <Text style={styles.span}>{CHANGEPCT24HOUR}%</Text>
         </Text>
-        <Text style={styles.texto}>Ultima Actualizacion: {' '}
+        <Text style={styles.texto}>Last update: {' '}
             <Text style={styles.span}>{LASTUPDATE}</Text>
         </Text>
     </View>

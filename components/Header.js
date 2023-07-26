@@ -2,7 +2,7 @@ import { Text, StyleSheet, Platform } from 'react-native';
 import React from 'react';
 
 const Header = () => (
-  <Text style={styles.encabezado}>Criptomonedas</Text>
+  <Text style={styles.encabezado}>Cryptocurrencies</Text>
 );
 
 const styles = StyleSheet.create({

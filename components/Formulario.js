@@ -56,26 +56,26 @@ const Formulario = ({
 
   return (
     <View>
-      <Text style={styles.label}>Moneda</Text>
+      <Text style={styles.label}>Currency</Text>
       <Picker 
         style={styles.input}
         onValueChange={ moneda => obtenerMoneda(moneda) }
         selectedValue={moneda} // Al valor que cambia
       >
-        <Picker.Item label='- Seleccione -' value="" />
-        <Picker.Item label='Dolar de Estados Unidos' value="USD" />
-        <Picker.Item label='Peso Mexicano' value="MXN" />
+        <Picker.Item label='- Select -' value="" />
+        <Picker.Item label='US Dollar' value="USD" />
+        <Picker.Item label='Mexican Peso' value="MXN" />
         <Picker.Item label='Euro' value="EUR" />
-        <Picker.Item label='Libra Esterlina' value="GBP" />
+        <Picker.Item label='Pound Sterling' value="GBP" />
       </Picker>
 
-      <Text style={styles.label}>Criptomoneda</Text>
+      <Text style={styles.label}>Cryptocurrency</Text>
       <Picker 
         style={styles.input}
         onValueChange={ criptomoneda => obtenerCriptomoneda(criptomoneda) }
         selectedValue={criptomoneda}
       >
-        <Picker.Item label='- Seleccione -' value="" />
+        <Picker.Item label='- Select -' value="" />
         { criptomonedas.map( cripto => (
             <Picker.Item key={cripto.CoinInfo.Id} label={cripto.CoinInfo.FullName} value={cripto.CoinInfo.Name} />
         )) }
@@ -85,7 +85,7 @@ const Formulario = ({
         style={styles.btnCotizar}
         onPressOut={ () => cotizarPrecio() }
       >
-        <Text style={styles.textoCotizar}>Cotizar</Text>
+        <Text style={styles.textoCotizar}>Quote</Text>
       </Pressable>
 
     </View>
